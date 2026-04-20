@@ -1,0 +1,221 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 17% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 17% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 17% 14%;
+
+    --primary: 210 17% 14%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 12 100% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 8% 85%;
+    --muted-foreground: 210 7% 45%;
+
+    --accent: 12 100% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 8% 90%;
+    --input: 210 8% 95%;
+    --ring: 12 100% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --pixelpulse-dark: 210 17% 14%;
+    --pixelpulse-light: 0 0% 100%;
+    --pixelpulse-accent: 12 100% 55%;
+    --pixelpulse-accent-light: 12 100% 92%;
+  }
+
+  .dark {
+    --background: 210 17% 14%;
+    --foreground: 210 8% 95%;
+
+    --card: 210 15% 20%;
+    --card-foreground: 210 8% 95%;
+
+    --popover: 210 15% 20%;
+    --popover-foreground: 210 8% 95%;
+
+    --primary: 210 8% 95%;
+    --primary-foreground: 210 17% 14%;
+
+    --secondary: 12 100% 55%;
+    --secondary-foreground: 210 17% 14%;
+
+    --muted: 210 15% 30%;
+    --muted-foreground: 210 8% 70%;
+
+    --accent: 12 100% 55%;
+    --accent-foreground: 210 17% 14%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 12 100% 55%;
+    --sidebar-background: 210 17% 14%;
+    --sidebar-foreground: 210 8% 95%;
+    --sidebar-primary: 12 100% 55%;
+    --sidebar-primary-foreground: 210 17% 14%;
+    --sidebar-accent: 210 15% 30%;
+    --sidebar-accent-foreground: 210 8% 95%;
+    --sidebar-border: 210 15% 25%;
+    --sidebar-ring: 12 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    cursor:
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FF6B35" width="24" height="24"><path d="M3 3l7 7H4v8h8v-6l7 7V3z"/></svg>')
+        12 12,
+      auto;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+  }
+
+  button,
+  a {
+    cursor:
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FF6B35" width="20" height="20"><circle cx="12" cy="12" r="8"/></svg>')
+        10 10,
+      pointer;
+  }
+
+  :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(255, 107, 53, 0.6);
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -1000px 0;
+    }
+    100% {
+      background-position: 1000px 0;
+    }
+  }
+
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+  }
+
+  .animate-shimmer {
+    background-image: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+}
