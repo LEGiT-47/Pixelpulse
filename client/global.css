@@ -111,7 +111,7 @@
   html {
     scroll-behavior: smooth;
     cursor:
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FF6B35" width="24" height="24"><path d="M3 3l7 7H4v8h8v-6l7 7V3z"/></svg>')
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="7" stroke="%236C63FF" stroke-width="1.8"/><path d="M12 2.5V7.2M12 16.8V21.5M2.5 12H7.2M16.8 12H21.5" stroke="%2300C9A7" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="2.2" fill="%2300C9A7"/></svg>')
         12 12,
       auto;
   }
@@ -124,7 +124,7 @@
   button,
   a {
     cursor:
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23FF6B35" width="20" height="20"><circle cx="12" cy="12" r="8"/></svg>')
+      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 1.6L18.4 10L10 18.4L1.6 10L10 1.6Z" fill="%236C63FF"/><path d="M10 4.9L15.1 10L10 15.1L4.9 10L10 4.9Z" fill="%2300C9A7"/></svg>')
         10 10,
       pointer;
   }
