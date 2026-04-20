@@ -727,7 +727,7 @@ export default function Index() {
               className="grid md:grid-cols-3 gap-6 mb-14">
               {[
                 { icon: "📧", label: "Email",     value: "hello@pixelpulsellp.in",  href: "mailto:hello@pixelpulsellp.in"        },
-                { icon: "💬", label: "WhatsApp",  value: "+91 98765 43210",          href: "https://wa.me/919876543210"           },
+                { icon: "💬", label: "WhatsApp",  value: "+91 98333 90905",          href: "https://wa.me/919833390905"           },
                 { icon: "📸", label: "Instagram", value: "@pixelpulsellp",           href: "https://instagram.com/pixelpulsellp" },
               ].map((item, i) => (
                 <motion.div key={i} variants={fadeUp} custom={i} whileHover={{ y: -5 }}>
@@ -744,6 +744,9 @@ export default function Index() {
 
             <motion.p variants={fadeUp} className="text-gray-400 text-sm italic">
               Creators, brands, marketers — if you want to grow together, Pixelpulse is your partner.
+            </motion.p>
+            <motion.p variants={fadeUp} className="text-gray-400 text-sm mt-3">
+              A/106, Gautam Nagar, Andheri East, Mumbai - 400093
             </motion.p>
           </motion.div>
         </div>
@@ -783,7 +786,8 @@ export default function Index() {
               <ul className="space-y-2.5 text-sm text-white/50">
                 <li><a href="mailto:hello@pixelpulsellp.in" className="hover:text-white transition-colors">📧 hello@pixelpulsellp.in</a></li>
                 <li><a href="https://instagram.com/pixelpulsellp" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">📸 @pixelpulsellp</a></li>
-                <li><a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">💬 +91 98765 43210</a></li>
+                <li><a href="https://wa.me/919833390905" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">💬 +91 98333 90905</a></li>
+                <li><span className="text-white/50">📍 A/106, Gautam Nagar, Andheri East, Mumbai - 400093</span></li>
               </ul>
             </div>
 

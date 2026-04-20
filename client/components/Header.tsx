@@ -79,7 +79,7 @@ export function Header() {
               <Youtube className="w-4 h-4" />
             </motion.a>
             <motion.a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919833390905"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.15, rotate: 5 }}
@@ -279,7 +279,7 @@ export function Header() {
                   <Youtube className="w-4 h-4" />
                 </motion.a>
                 <motion.a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/919833390905"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.15 }}
