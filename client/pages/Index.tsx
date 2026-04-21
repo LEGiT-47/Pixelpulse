@@ -82,7 +82,7 @@ const plans = [
     name: "Starter",
     price: "₹699",
     period: "/month",
-    features: ["1 campaign per month", "Up to 5 influencers", "Basic analytics report", "Email support"],
+    features: ["1 campaign per month", "Up to 5 influencers", "Basic analytics report", "Chat support"],
     highlight: false,
   },
   {
@@ -724,15 +724,14 @@ export default function Index() {
             </motion.button>
 
             <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={{ once: true }}
-              className="grid md:grid-cols-3 gap-6 mb-14">
+              className="grid md:grid-cols-2 gap-6 mb-14">
               {[
-                { icon: "📧", label: "Email",     value: "hello@pixelpulsellp.in",  href: "mailto:hello@pixelpulsellp.in"        },
                 { icon: "💬", label: "WhatsApp",  value: "+91 98333 90905",          href: "https://wa.me/919833390905"           },
                 { icon: "📸", label: "Instagram", value: "@pixelpulsellp",           href: "https://instagram.com/pixelpulsellp" },
               ].map((item, i) => (
                 <motion.div key={i} variants={fadeUp} custom={i} whileHover={{ y: -5 }}>
-                  <a href={item.href} target={item.href.startsWith("mailto:") ? undefined : "_blank"}
-                     rel={item.href.startsWith("mailto:") ? undefined : "noopener noreferrer"}
+                  <a href={item.href} target="_blank"
+                     rel="noopener noreferrer"
                      className="block bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:border-violet-200 hover:shadow-md transition-all group">
                     <p className="text-3xl mb-2">{item.icon}</p>
                     <p className="text-xs text-gray-400 mb-1 group-hover:text-violet-500 transition-colors uppercase tracking-wider">{item.label}</p>
@@ -784,7 +783,6 @@ export default function Index() {
             <div>
               <h4 className="font-bold mb-4 text-sm tracking-wider uppercase text-white/60">Get In Touch</h4>
               <ul className="space-y-2.5 text-sm text-white/50">
-                <li><a href="mailto:hello@pixelpulsellp.in" className="hover:text-white transition-colors">📧 hello@pixelpulsellp.in</a></li>
                 <li><a href="https://instagram.com/pixelpulsellp" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">📸 @pixelpulsellp</a></li>
                 <li><a href="https://wa.me/919833390905" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">💬 +91 98333 90905</a></li>
                 <li><span className="text-white/50">📍 A/106, Gautam Nagar, Andheri East, Mumbai - 400093</span></li>
