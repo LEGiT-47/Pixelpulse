@@ -79,14 +79,14 @@ export function Header() {
               <Youtube className="w-4 h-4" />
             </motion.a>
             <motion.a
-              href="https://wa.me/919833390905"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:sahilpixelpulse@gmail.com"
               whileHover={{ scale: 1.15, rotate: 5 }}
               className="p-2 rounded-full hover:bg-secondary/10 text-foreground hover:text-secondary transition-colors"
-              title="WhatsApp"
+              title="Email"
             >
-              <MessageCircle className="w-4 h-4" />
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
             </motion.a>
             <motion.a
               href="https://wa.me/919833390905"
@@ -279,14 +279,18 @@ export function Header() {
                   <Youtube className="w-4 h-4" />
                 </motion.a>
                 <motion.a
-                  href="https://wa.me/919833390905"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:sahilpixelpulse@gmail.com"
                   whileHover={{ scale: 1.15 }}
                   className="p-2 rounded-full hover:bg-secondary/10 text-foreground hover:text-secondary transition-colors"
-                  title="WhatsApp"
+                  title="Email"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <svg
+                    className="w-4 h-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
                 </motion.a>
                 <motion.a
                   href="https://wa.me/919833390905"
